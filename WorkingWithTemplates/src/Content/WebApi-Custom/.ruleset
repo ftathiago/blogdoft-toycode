@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Rules for StyleCop.Analyzers" Description="Code analysis rules for StyleCop.Analyzers.csproj." ToolsVersion="16.0">
+  <Rules AnalyzerId="Roslynator.CSharp.Analyzers" RuleNamespace="Roslynator.CSharp.Analyzers">
+    <Rule Id="RCS1090" Action="Hidden" />
+  </Rules>
+  <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+    <Rule Id="SA0001" Action="Hidden" />
+    <Rule Id="SA1000" Action="Hidden" />
+    <Rule Id="SA1101" Action="None" />
+    <Rule Id="SA1119" Action="Hidden" />    
+    <Rule Id="SA1208" Action="Hidden" />
+    <Rule Id="SA1305" Action="Warning" />
+    <Rule Id="SA1309" Action="Hidden" />
+    <Rule Id="SA1412" Action="Hidden" />
+    <Rule Id="SA1600" Action="Hidden" />
+    <Rule Id="SA1601" Action="Hidden" />
+    <Rule Id="SA1609" Action="Warning" />
+    <Rule Id="SA1633" Action="Hidden" />
+    <Rule Id="SA1639" Action="Hidden" />
+  </Rules>
+</RuleSet>

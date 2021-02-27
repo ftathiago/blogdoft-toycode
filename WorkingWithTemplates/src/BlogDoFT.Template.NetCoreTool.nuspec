@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BlogDoFT.Template.NetCoreTool.nuspec</id>
+    <version>1.0.0</version>
+    <description>
+      Project template for creating a .Net WebApi
+    </description>
+    <authors>Francisco Thiago de Almeida</authors>
+    <license type="expression">Apache-2.0</license>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+  <files>
+    <file src="Content\**\*.*" exclude="Content\**\bin\**\*.*;Content\**\obj\**\*.*" target="Content" />
+  </files>  
+</package>
