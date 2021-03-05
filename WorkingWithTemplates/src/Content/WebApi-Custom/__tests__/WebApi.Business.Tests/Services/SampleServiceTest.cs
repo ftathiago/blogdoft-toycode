@@ -73,10 +73,10 @@ namespace WebApi.Business.Tests.Services
         public void ShouldNotThrowExceptions()
         {
             var exceptionThrowed = new TestException();
-            const HttpStatusCode expectedStatusCode = HttpStatusCode.InternalServerError;
+            const HttpStatusCode ExpectedStatusCode = HttpStatusCode.InternalServerError;
             _messageHolder
                 .Setup(mh => mh.AddMessage(
-                    expectedStatusCode,
+                    ExpectedStatusCode,
                     exceptionThrowed.Message));
             _repository
                 .Setup(s => s.GetById(It.IsAny<int>()))
@@ -99,10 +99,10 @@ namespace WebApi.Business.Tests.Services
         public void ShouldRollbackWhenAnyErrorOccursInsideRepository()
         {
             var exceptionThrowed = new TestException();
-            const HttpStatusCode expectedStatusCode = HttpStatusCode.InternalServerError;
+            const HttpStatusCode ExpectedStatusCode = HttpStatusCode.InternalServerError;
             _messageHolder
                 .Setup(mh => mh.AddMessage(
-                    expectedStatusCode,
+                    ExpectedStatusCode,
                     exceptionThrowed.Message));
             _repository
                 .Setup(s => s.GetById(It.IsAny<int>()))

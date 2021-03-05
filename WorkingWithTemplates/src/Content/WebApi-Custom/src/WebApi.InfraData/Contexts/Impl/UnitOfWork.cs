@@ -12,7 +12,7 @@ namespace WebApi.InfraData.Contexts
         private readonly IDbConnectionFactory _connFactory;
         private int _transactionCounter = 0;
         private IDbConnection _connection;
-        private bool disposedValue;
+        private bool _disposedValue;
 
         public UnitOfWork(ILogger<UnitOfWork> logger, IDbConnectionFactory connFactory)
         {
@@ -67,14 +67,14 @@ namespace WebApi.InfraData.Contexts
 
         protected virtual void Dispose(bool disposing)
         {
-            if (disposedValue)
+            if (_disposedValue)
             {
                 return;
             }
 
             if (!disposing)
             {
-                disposedValue = true;
+                _disposedValue = true;
             }
 
             LogLostTransaction();

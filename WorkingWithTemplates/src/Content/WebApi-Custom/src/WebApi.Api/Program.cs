@@ -26,6 +26,10 @@ namespace WebApi
                 Log.Fatal($"Failed to start the {Assembly.GetExecutingAssembly().GetName().Name}", ex);
                 throw;
             }
+            finally
+            {
+                Log.CloseAndFlush();
+            }
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) => Host

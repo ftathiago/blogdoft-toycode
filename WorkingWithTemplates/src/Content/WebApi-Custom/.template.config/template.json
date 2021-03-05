@@ -4,16 +4,16 @@
     "description": "A 'toy-code' to demonstrate how to use templates for boilerplate delivery.",
     "classifications": [
         "Web",
-        "ASP.NET"
+        "WebAPI"
     ],
     "name": "Blog do FT - WebAPI",
     "shortName": "bftWebApi",
-    "defaultName": "WebApi",
-    "identity": "BlogDoFt.Web.CSharp",
+    "identity": "webapi.br.com.blogdoft",
     "tags": {
         "language": "C#",
         "type": "project"
     },
+    "defaultName": "WebApi",
     "sourceName": "WebApi",
     "preferNameDirectory": true,
     "symbols": {

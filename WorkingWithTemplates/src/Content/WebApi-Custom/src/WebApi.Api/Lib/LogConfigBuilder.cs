@@ -36,12 +36,6 @@ namespace WebApi.Api.Lib
         private ILogger GetLoggerConfiguration()
         {
             var logConfigBuilder = new LoggerConfiguration()
-                .Enrich.FromLogContext()
-                .Enrich.WithMachineName()
-                .Enrich.WithExceptionData()
-                .Enrich.WithProperty("Environment", _environment)
-                .WriteTo.Debug()
-                .WriteTo.Console()
                 .ReadFrom.Configuration(_configuration);
 
             return WriteLogOnFile(logConfigBuilder)

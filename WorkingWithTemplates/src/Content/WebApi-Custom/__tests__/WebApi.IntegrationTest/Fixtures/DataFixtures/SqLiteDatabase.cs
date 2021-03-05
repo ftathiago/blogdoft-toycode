@@ -6,12 +6,12 @@ namespace WebApi.IntegrationTest.Fixtures.DataFixtures
 {
     public class SqLiteDatabase
     {
-        private readonly OrmLiteConnectionFactory dbFactory =
+        private readonly OrmLiteConnectionFactory _dbFactory =
             new(":memory:", SqliteOrmLiteDialectProvider.Instance);
 
         public SqLiteDatabase()
         {
-            Connection = this.dbFactory.OpenDbConnection();
+            Connection = _dbFactory.OpenDbConnection();
             CreateDatabase();
         }
 
