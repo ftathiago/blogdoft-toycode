@@ -1,53 +1,58 @@
 ﻿{
-    "$schema": "http://json.schemastore.org/template",
-    "author": "Francisco Thiago de Almeida",
-    "description": "A 'toy-code' to demonstrate how to use templates for boilerplate delivery.",
-    "classifications": [
-        "Web",
-        "WebAPI"
-    ],
-    "name": "Blog do FT - WebAPI",
-    "shortName": "bftWebApi",
-    "identity": "webapi.br.com.blogdoft",
-    "tags": {
-        "language": "C#",
-        "type": "project"
-    },
-    "defaultName": "WebApi",
-    "sourceName": "WebApi",
-    "preferNameDirectory": true,
-    "symbols": {
-        "Framework": {
-            "type": "parameter",
-            "description": "The target framework for the project.",
-            "datatype": "choice",
-            "choices": [
-                {
-                    "choice": "net5.0",
-                    "description": "Target net5.0"
-                }
-            ],
-            "replaces": "net5.0",
-            "defaultValue": "net5.0"
-        },
-        "excludeSamples": {
-            "type": "parameter",
-            "datatype": "bool",
-            "description": "Create sample code",
-            "defaultValue": "false"
-        }
-    },
-    "placeholderFilename": "-.-",
-    "sources": [
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Francisco Thiago de Almeida",
+  "description": "A 'toy-code' to demonstrate how to use templates for boilerplate delivery.",
+  "classifications": [
+    "Web",
+    "WebAPI"
+  ],
+  "name": "Blog do FT - WebAPI",
+  "shortName": "bftWebApi",
+  "identity": "webapi.br.com.blogdoft",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "defaultName": "WebApi",
+  "sourceName": "WebApi",
+  "preferNameDirectory": true,
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
         {
-            "modifiers": [
-                {
-                    "condition": "(excludeSamples)",
-                    "exclude": [
-                        "**/*Sample*.cs"
-                    ]
-                }
-            ]
+          "choice": "net5.0",
+          "description": "Target net5.0"
         }
-    ]
+      ],
+      "replaces": "net5.0",
+      "defaultValue": "net5.0"
+    },
+    "excludeSamples": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "Create sample code",
+      "defaultValue": "false"
+    }
+  },
+  "placeholderFilename": "-.-",
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": "(excludeSamples)",
+          "exclude": [
+            "**/*Sample*.cs"
+          ]
+        }
+      ]
+    }
+  ],
+  "primaryOutputs": [
+    {
+      "path": "WebApi.sln"
+    }
+  ]
 }
