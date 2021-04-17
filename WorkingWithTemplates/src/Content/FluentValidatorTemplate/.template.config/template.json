@@ -1,0 +1,31 @@
+﻿{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Francisco Thiago de Almeida",
+    "description": "A 'toy-code' to demonstrate how to use templates items.",
+    "classifications": [
+        "Common",
+        "Code"
+    ],
+    "name": "Blog do FT - FluentValidator",
+    "identity": "fluentvalidator.br.com.blogdoft",
+    "shortName": "bftFluentvalidator",
+    "sourceName": "ClassNameValidator",
+    "tags": {
+        "language": "C#",
+        "type": "item"
+    },
+    "symbols": {
+        "validateClass": {
+            "type": "parameter",
+            "description": "Enter the class name to be validated.",
+            "datatype": "text",
+            "replaces": "ClassName"
+        },
+        "templateNamespace": {
+            "type": "parameter",
+            "description": "Enter the namespace.",
+            "datatype": "text",
+            "replaces": "TemplateNamespace"
+        }
+    }
+}

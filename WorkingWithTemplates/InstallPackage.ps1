@@ -41,7 +41,7 @@ else{
     return
 }
 
-$pathtonupkg = join-path $scriptDir nupkg/BlogDoFT.Template.NetCoreTool.nuspec.1.0.0.nupkg
+$pathtonupkg = join-path $scriptDir nupkg/*.nupkg
 # install nuget package using dotnet new --install
 if(test-path $pathtonupkg){   
     Reset-Templates
