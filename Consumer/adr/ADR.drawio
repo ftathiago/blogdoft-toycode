@@ -1,0 +1,78 @@
+﻿<mxfile>
+    <diagram id="9nIlQ3l5X5CeDk667ojN" name="Dependency map">
+        <mxGraphModel dx="1879" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <object placeholders="1" c4Name="Consumer.Worker" c4Type="Software System" c4Description="Run worker and implement consumer" label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" id="2">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#1168BD;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#1168BD;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+                        <mxGeometry x="-500" y="-310" width="160" height="110.00000000000001" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Name="Consumer.InfraData" c4Type="Software System" c4Description="" label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" id="5">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#1168BD;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#1168BD;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+                        <mxGeometry x="-500" y="180" width="160" height="110.00000000000001" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Type="Relationship" c4Technology="" c4Description="Depends" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="6">
+                    <mxCell style="edgeStyle=none;rounded=0;html=1;entryX=0.5;entryY=1;jettySize=auto;orthogonalLoop=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;dashed=1;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="5" target="7" edge="1">
+                        <mxGeometry width="160" relative="1" as="geometry">
+                            <mxPoint x="-200" y="410" as="sourcePoint"/>
+                            <mxPoint x="-40" y="410" as="targetPoint"/>
+                        </mxGeometry>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Name="Consumer.Business" c4Type="Software System" c4Description="" label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" id="7">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#1168BD;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#1168BD;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+                        <mxGeometry x="-500" y="-70" width="160" height="110.00000000000001" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Name="Consumer.IoC" c4Type="Software System" c4Description="" label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" id="10">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#1168BD;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#1168BD;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+                        <mxGeometry x="-220" y="-70" width="160" height="110.00000000000001" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Type="Relationship" c4Technology="" c4Description="Depends" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="11">
+                    <mxCell style="edgeStyle=none;rounded=0;html=1;entryX=1;entryY=0.5;jettySize=auto;orthogonalLoop=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;dashed=1;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="10" target="7" edge="1">
+                        <mxGeometry width="160" relative="1" as="geometry">
+                            <mxPoint x="-210" y="250" as="sourcePoint"/>
+                            <mxPoint x="-50" y="250" as="targetPoint"/>
+                        </mxGeometry>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Type="Relationship" c4Technology="" c4Description="Depends" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="13">
+                    <mxCell style="edgeStyle=none;rounded=0;html=1;entryX=1;entryY=0.5;jettySize=auto;orthogonalLoop=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;dashed=1;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="10" target="5" edge="1">
+                        <mxGeometry x="-0.52" width="160" relative="1" as="geometry">
+                            <mxPoint x="-220" y="165" as="sourcePoint"/>
+                            <mxPoint x="-340" y="165" as="targetPoint"/>
+                            <Array as="points">
+                                <mxPoint x="-140" y="235"/>
+                            </Array>
+                            <mxPoint y="-1" as="offset"/>
+                        </mxGeometry>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Type="Relationship" c4Technology="" c4Description="Depends" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="16">
+                    <mxCell style="edgeStyle=none;rounded=0;html=1;entryX=0.5;entryY=0;jettySize=auto;orthogonalLoop=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;dashed=1;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="2" target="10" edge="1">
+                        <mxGeometry x="-0.4951" width="160" relative="1" as="geometry">
+                            <mxPoint x="-280" y="-60" as="sourcePoint"/>
+                            <mxPoint x="-280" y="50" as="targetPoint"/>
+                            <Array as="points">
+                                <mxPoint x="-140" y="-255"/>
+                            </Array>
+                            <mxPoint x="-1" as="offset"/>
+                        </mxGeometry>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Type="Relationship" c4Technology="" c4Description="Depends" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="18">
+                    <mxCell style="edgeStyle=none;rounded=0;html=1;entryX=0.5;entryY=0;jettySize=auto;orthogonalLoop=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;dashed=1;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="2" target="7" edge="1">
+                        <mxGeometry width="160" relative="1" as="geometry">
+                            <mxPoint x="-420" y="-149.99999999999977" as="sourcePoint"/>
+                            <mxPoint x="-420" y="-100" as="targetPoint"/>
+                        </mxGeometry>
+                    </mxCell>
+                </object>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
