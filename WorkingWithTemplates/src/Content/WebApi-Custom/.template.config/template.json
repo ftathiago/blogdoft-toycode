@@ -35,6 +35,12 @@
       "datatype": "bool",
       "description": "Create sample code",
       "defaultValue": "false"
+    },
+    "excludeWarmup": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "Exclude warmup capabilities",
+      "defaultValue": "false"
     }
   },
   "placeholderFilename": "-.-",
@@ -45,6 +51,12 @@
           "condition": "(excludeSamples)",
           "exclude": [
             "**/*Sample*.cs"
+          ]
+        },
+        {
+          "condition": "!(warmup)",
+          "exclude": [
+            "**/*WarmUp/**"
           ]
         }
       ]

@@ -1,14 +1,16 @@
 using Dapper;
+using System.Threading.Tasks;
 using WebApi.Business.Entities;
 using WebApi.Business.Repositories;
 using WebApi.InfraData.Exceptions;
 using WebApi.InfraData.Extensions;
 using WebApi.InfraData.Models;
 using WebApi.Shared.Data.Contexts;
+using WebApi.WarmUp.Abstractions;
 
 namespace WebApi.InfraData.Repositories
 {
-    public class SampleRepository : ISampleRepository
+    public class SampleRepository : IWarmUpCommand, ISampleRepository
     {
         private readonly IUnitOfWork _unitOfWork;
 
@@ -29,7 +31,10 @@ namespace WebApi.InfraData.Repositories
         public void Remove(SampleEntity model)
         {
             var alteredCount = _unitOfWork.Connection
-                .Execute(SampleRepositoryStmt.Remove, model.Id);
+                .Execute(
+                    SampleRepositoryStmt.Remove,
+                    new { model.Id },
+                    _unitOfWork.Transaction);
 
             if (alteredCount > 1)
             {
@@ -46,6 +51,13 @@ namespace WebApi.InfraData.Repositories
             {
                 throw new DeleteException("Sample Table", alteredCount, 0);
             }
+        }
+
+        Task IWarmUpCommand.Execute()
+        {
+            GetById(-1);
+            Remove(new SampleEntity { Id = -1 });
+            return Task.CompletedTask;
         }
     }
 }

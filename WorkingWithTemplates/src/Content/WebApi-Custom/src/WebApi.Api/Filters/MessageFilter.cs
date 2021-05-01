@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using WebApi.Shared.Holders;
 
-namespace WebApi.Api.Middlerwares
+namespace WebApi.Api.Filters
 {
     public class MessageFilter : IActionFilter
     {

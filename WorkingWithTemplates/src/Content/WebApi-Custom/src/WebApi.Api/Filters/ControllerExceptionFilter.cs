@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
 using WebApi.Shared.Extensions;
 
-namespace WebApi.Api.Middlerwares
+namespace WebApi.Api.Filters
 {
     public class ControllerExceptionFilter : IExceptionFilter
     {

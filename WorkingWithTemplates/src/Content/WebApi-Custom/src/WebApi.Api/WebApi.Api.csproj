@@ -33,6 +33,7 @@
     <ProjectReference Include="..\WebApi.InfraData\WebApi.InfraData.csproj" />
     <ProjectReference Include="..\WebApi.Shared\WebApi.Shared.csproj" />
     <ProjectReference Include="..\WebApi.Business\WebApi.Business.csproj" />
+    <ProjectReference Include="..\WebApi.WarmUp\WebApi.WarmUp.csproj" />
   </ItemGroup>  
 
 </Project>
