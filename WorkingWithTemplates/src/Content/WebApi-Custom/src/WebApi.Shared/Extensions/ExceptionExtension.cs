@@ -14,10 +14,7 @@ namespace WebApi.Shared.Extensions
                 .Append(exception.Message)
                 .Append(separator);
 
-            if (exception.InnerException is not null)
-            {
-                exception.InnerException.GetAllMessage(separator, stringBuilder);
-            }
+            exception.InnerException?.GetAllMessage(separator, stringBuilder);
 
             if (exception is AggregateException agg)
             {
