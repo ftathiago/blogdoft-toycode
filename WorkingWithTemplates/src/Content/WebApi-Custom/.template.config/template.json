@@ -8,7 +8,7 @@
   ],
   "name": "Blog do FT - WebAPI",
   "shortName": "bftWebApi",
-  "identity": "webapi.br.com.blogdoft",
+  "identity": "br.com.blogdoft.webapi",
   "tags": {
     "language": "C#",
     "type": "solution"
@@ -16,6 +16,23 @@
   "defaultName": "WebApi",
   "sourceName": "WebApi",
   "preferNameDirectory": true,
+  "guids": [
+    "05155148-63FB-42F0-AB8D-CE5CF2752CBE",
+    "2150E333-8FDC-42A3-9474-1A3956D46DE8",
+    "375B1F0F-D71E-4DB2-93B8-4197C063DF05",
+    "5AD7EC19-E27C-4063-87E3-492063B2FE51",
+    "61CD544D-37D7-4C50-A732-457B63E7A184",
+    "6EF751CF-A157-4E6A-913C-E832045DC2BB",
+    "7F739A7E-387B-4045-A27E-F9801FFA9E20",
+    "95480759-65A2-4034-A492-D9C34495319F",
+    "96B31EBD-921D-4FDC-ABAF-5FB4386CA22B",
+    "A248177E-28A3-4396-99AF-38015751BBC9",
+    "BCABB715-BF49-4C18-A76C-CCE9D566C9D9",
+    "DB4C480D-93C8-4B0A-B3C5-2A4CF94C19D9",
+    "E12718AA-8BBA-4ADC-BEA6-615FC2A76C32",
+    "F4F98233-6590-46E3-9EEB-D635A3E891CB",
+    "FAE04EC0-301F-11D3-BF4B-00C04F79EFBC"
+  ],
   "symbols": {
     "Framework": {
       "type": "parameter",

@@ -1,0 +1,45 @@
+﻿{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Francisco Thiago de Almeida",
+    "description": "A 'toy-code' to demonstrate how to use templates items.",
+    "classifications": [
+        "Common",
+        "Code"
+    ],
+    "name": "Blog do FT - FluentMigrator",
+    "identity": "br.com.blogdoft.fluentmigrator",
+    "shortName": "bftFluentMigrator",
+    "sourceName": "MigrationName",
+    "tags": {
+        "language": "C#",
+        "type": "item"
+    },
+    "symbols": {
+        "Framework": {
+            "type": "parameter",
+            "description": "The target framework for the project.",
+            "datatype": "choice",
+            "choices": [
+                {
+                    "choice": "net5.0",
+                    "description": "Target net5.0"
+                }
+            ],
+            "replaces": "net5.0",
+            "defaultValue": "net5.0"
+        },
+        "versionMigration": {
+            "type": "parameter",
+            "description": "Enter the Migration version.",
+            "datatype": "float",
+            "replaces": "18991231235959",
+            "isRequired": true
+        },
+        "templateNamespace": {
+            "type": "parameter",
+            "description": "Enter the namespace.",
+            "datatype": "text",
+            "replaces": "TemplateNamespace"
+        }
+    }
+}

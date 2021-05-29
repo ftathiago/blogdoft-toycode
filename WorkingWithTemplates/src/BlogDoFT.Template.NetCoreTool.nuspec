@@ -14,5 +14,5 @@
   </metadata>
   <files>
     <file src="Content\**\*.*" exclude="Content\**\bin\**\*.*;Content\**\obj\**\*.*;Content\**\coverage_report\*.*" target="Content" />
-  </files>  
+  </files>
 </package>
