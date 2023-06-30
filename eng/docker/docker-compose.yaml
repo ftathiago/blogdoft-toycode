@@ -1,0 +1,23 @@
+﻿version: "3.4"
+
+networks:
+  backend:
+    driver: bridge
+  frontend:
+
+volumes:
+  gitleaks-volume:
+
+services:
+  postgres:
+    image: postgres:11.12
+    volumes:
+      - ./postgres/schema.sql:/docker-entrypoint-initdb.d/1-schema.sql
+      - gitleaks-volume:/var/lib/postgresql/data
+    env_file:
+      - ./postgres/database.env
+    ports:
+      - "15432:5432"
+    networks:
+      - backend
+      - frontend
